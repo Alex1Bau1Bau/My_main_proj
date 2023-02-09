@@ -1,0 +1,459 @@
+body {
+    background: rgb(32,190,74);
+    background: linear-gradient(90deg, rgba(32,190,74,0.9248074229691877) 0%, rgba(45,195,226,0.9528186274509804) 100%);
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+}
+
+.main_container {
+    display: flex;
+
+}
+
+.about_yourself_main {
+    margin-left: 242px;
+    width: 1110px;
+    height: 600px;
+
+}
+
+.sitebar-section {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(107, 109, 106, 0.4);
+    /* background: rgba(41, 44, 39, 0.4); */
+    backdrop-filter: blur(20px);
+    border-right: 3,rgba(13, 163, 143, 0.4);
+}
+
+.sitebar-section-img1 {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.sitebar-section-div2 {
+    width: 250px;
+    height: 300px;
+    padding: 1px;
+    /* color: rgb(9, 73, 73); */
+    color: rgb(24, 31, 31);
+    /* font-family: 'Noto Serif Display', serif; */
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.sitebar-section-div2 h1 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.sitebar-section-div2 ul li {
+    padding-bottom: 15px;
+    word-wrap: break-word;
+    width: 150px;
+    text-decoration: none;
+}
+
+.sitebar-section-div2 ul li a {
+    text-decoration: none;
+    color: rgb(9, 73, 73);
+}
+
+.access_panel {
+
+    text-align: right;
+    width: 1116px;
+    height: 60px;
+
+    background-color: rgb(67, 73, 68);
+    margin-top: -10px;
+    border-radius: 2px;
+    border-bottom: 10px rgb(10, 9, 9);
+
+}
+
+.access_panel:hover {
+    /* background-color: rgba(13, 160, 140, 0.4); */
+    background-color: rgb(48, 59, 58);
+    height: 65px;
+    transition-duration: 0.5s;
+  }
+
+.access_panel_log {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-right: 10px;
+
+}
+
+.access_panel_log_div {
+    margin-right: 25px;
+    margin-left: 55px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    height: 40px;
+    color: rgb(105, 241, 189);
+    top: 50%;
+}
+.btn-1 {
+    /* background: rgb(96,9,240); */
+    background-color: rgb(67, 73, 68);
+    background: linear-gradient(0deg, rgb(98, 202, 107) 0%, rgb(14, 203, 209) 100%);
+    border: none;
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .btn-1:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-1:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5),
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+/* 222222222222222222222222222222222222222222 */
+
+.about_yourself {
+    /* position: sticky; */
+    /* margin-left: 245px; */
+    width: 1110px;
+    height: 100px;
+
+
+}
+
+.about_yourself_h1_ {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    font-style: normal;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.about_yourself_h2_  {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* 3333333333333333333333333333333333333333 */
+
+.about_yourself_div2_ {
+    /* position: sticky;
+    top: 130px; left: 255px; */
+    /* margin-left: 245px; */
+    /* background-color: brown; */
+    width: 1110px;
+    height: 480px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.about_yourself_div11_ {
+    /* position: sticky;
+    top: 130px; left: 255px; */
+    /* margin-left: 245px; */
+    /* background-color: brown; */
+    width: 1110px;
+    height: 480px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.about_yourself_div11_ div:hover {
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5),
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+.about_yourself_pers_data_ {
+    /* position: relative;
+    top: -10px; left: 0px; */
+
+    background-color: rgb(67, 73, 68);
+    color: rgb(18, 235, 152);
+
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-top: 1px;
+
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    word-wrap: break-word;
+
+}
+
+.about_yourself_target_ {
+    /* position: relative;
+    top: 0px; left: 0px; */
+
+    background-color: rgb(67, 73, 68);
+    /* color: rgb(23, 219, 219); */
+    color: rgb(39, 226, 179);
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    /* color: rgb(32,190,74);
+    color: linear-gradient(90deg, rgba(32,190,74,0.9248074229691877) 0%, rgba(45,195,226,0.9528186274509804) 100%); */
+    padding-left: 10px;
+    padding-top: 5px;
+
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    word-wrap: break-word;
+
+}
+
+.about_yourself_education_ {
+    /* position: sticky;
+    bottom: 20px; */
+    background-color: rgb(67, 73, 68);
+    /* color: rgb(139, 160, 206); */
+    color: rgb(23, 219, 219);
+    /* color: rgb(32,190,74);
+    color: linear-gradient(90deg, rgba(32,190,74,0.9248074229691877) 0%, rgba(45,195,226,0.9528186274509804) 100%); */
+
+    width: 350px;
+    height: 230px;
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-top: 5px;
+
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    word-wrap: break-word;
+}
+
+.about_yourself_skills_ {
+
+    /* position: relative;
+    top: -200px; left: 0px; */
+
+    background-color: rgb(67, 73, 68);
+    /* color: rgb(139, 160, 206); */
+    color: rgb(18, 235, 152);
+    color: linear-gradient(0deg, rgb(98, 202, 107) 0%, rgb(14, 203, 209) 100%);
+    /* color: rgb(32,190,74);
+    color: linear-gradient(90deg, rgba(32,190,74,0.9248074229691877) 0%, rgba(45,195,226,0.9528186274509804) 100%); */
+
+    width: 550px;
+    height: 220px;
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-top: 5px;
+
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    word-wrap: break-word;
+
+}
+
+.about_yourself_frame_ {
+    background-color: rgb(67, 73, 68);
+    /* color: rgb(139, 160, 206); */
+    color: rgb(23, 219, 219);
+    color: linear-gradient(0deg, rgb(98, 202, 107) 0%, rgb(14, 203, 209) 100%);
+    /* color: rgb(32,190,74);
+    color: linear-gradient(90deg, rgba(32,190,74,0.9248074229691877) 0%, rgba(45,195,226,0.9528186274509804) 100%); */
+
+    width: 350px;
+    height: 180px;
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-top: 5px;
+
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    word-wrap: break-word;
+    align-self: flex-end;
+}
+
+/* ____________________________________________________________________________ */
+/* btnbtnbtnbtnbtnbtnbtnbtnbtnbtnbtnbtn */
+
+.custom-btn {
+    width: 200px;
+    height: 40px;
+    /* color: #fff; */
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px 25px;
+    /* font-family: 'Lato', sans-serif;
+    font-weight: 500; */
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+  }
+.btn-2 {
+    /* background: rgb(96,9,240); */
+    background-color: rgb(67, 73, 68);
+    background: linear-gradient(0deg, rgb(98, 202, 107) 0%, rgb(14, 203, 209) 100%);
+    border: none;
+
+  }
+  .btn-2:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-2:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5),
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+
+  .form_login_reg {
+    background-color: rgb(67, 73, 68);
+
+    color: rgb(18, 235, 152);
+    color: linear-gradient(0deg, rgb(98, 202, 107) 0%, rgb(14, 203, 209) 100%);
+
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-top: 25px;
+    margin-left: 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+/* btnbtnbtnbtnbtnbtnbtnbtnbtnbtnbtnbtn */
+/* ____________________________________________________________________________ */
+
+/* ===============================================================
+================================================================
+===============================================================
+================================================================ */
+
+/* 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 */
+/* js */
+
+.main_container_js {
+    /* background-color: rgb(135, 27, 236); */
+
+    margin-left: 242px;
+
+    width: 1110px;
+    height: 600px;
+
+}
+
+.main_container_js_2 {
+    /* background-color: brown; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_container_js_h1 {
+    font-size: 22px;
+    font-style: normal;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.calculator_js {
+    background-color: rgb(10, 9, 9);
+    width: 250px;
+    height: 270px;
+    border-radius: 5px;
+    margin-left: 20px;
+
+}
+
+.calculator_js_inp {
+    background-color: rgba(49, 243, 153, 0.979);
+    width: 235px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator_js_inp button {
+    width: 30px;
+    height: 24px;
+}
+
+#calc_inp {
+
+    width: 195px;
+    height: 25px;
+    text-align: right;
+}
+
+.calculator_js_button {
+    /* background-color: blueviolet; */
+    background-color: rgba(49, 243, 153, 0.979);
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 80%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.calculator_js_button_button {
+
+    width: 55px;
+    height: 40px;
+    margin: 2px;
+    background-color: rgba(174, 184, 179, 0.979);
+    border-radius: 5px;
+}
+
+.calculator_js_button button:hover {
+    /* background-color: rgba(49, 243, 153, 0.979); */
+    background-color: rgba(186, 250, 220, 0.979);
+}

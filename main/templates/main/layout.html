@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+
+
+    <div class="main_container">
+
+        <!-- 11111111111111111111111111111111111111111 -->
+        <div class="sitebar-section">
+            <div class="sitebar-section-img1">
+                <img src="{% static 'main/img/title1.png' %}" alt="" class="sitebar-section-img1">
+            </div>
+            <div class="sitebar-section-div2">
+                <h1>Мої роботи</h1>
+                <ul>
+                    <li><a href="{% url 'home' %}"><button class="custom-btn btn-2">Резюме</button></a></li>
+                    <li><a href="{% url 'jsproj' %}"><button class="custom-btn btn-2">My Js Код</button></a></li>
+                    <li><a href=""><button class="custom-btn btn-2">Резюме</button></a></li>
+                    <li><a href=""><button class="custom-btn btn-2">Резюме</button></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 222222222222222222222222222222222222222 -->
+        <div class="about_yourself_main" style="background-image: url({% static 'main/img/img2.png' %});">
+            <div class="about_yourself">
+                <div class="access_panel">
+
+                    <div class="access_panel_log">
+                        {% if request.user.is_authenticated %}
+                            <div class="access_panel_log_div"> {{user.username}} || </div>
+                            <div><a href="{% url 'logout' %}"><button class="btn-1">Exit</button></a></div>
+                        {% else %}
+                            <h3 style="color: rgb(105, 241, 189); margin-right:160px">Щоб користуватися своїми ресурсами увійдіть у систему</h3>
+                            <!-- <div class="access_panel_log_div">no_User ||</div> -->
+                            <div><a href="{% url 'register' %}"><button class="btn-1">Регистрация</button></a></div>
+                            <div><a href="{% url 'login' %}"><button class="btn-1">Войти</button></a></div>
+                        {% endif %}
+<!--                        <h3 style="color: rgb(105, 241, 189); margin-right:160px">Щоб користуватися своїми ресурсами увійдіть у систему</h3>-->
+<!--                        &lt;!&ndash; <div class="access_panel_log_div">no_User ||</div> &ndash;&gt;-->
+<!--                        <div><a href="{% url 'register' %}"><button class="btn-1">Регистрация</button></a></div>-->
+<!--                        <div><a href="{% url 'login' %}"><button class="btn-1">Войти</button></a></div>-->
+                    </div>
+                </div>
+                <h1 class="about_yourself_h1_">Alex Ba production</h1>
+                {% block title2 %}
+
+                {% endblock %}
+
+            </div>
+
+            <div class="about_yourself_div2_">
+                {% block content %}
+
+                {% endblock %}
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

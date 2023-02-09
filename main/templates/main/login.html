@@ -1,0 +1,32 @@
+{% extends 'main/layout.html' %}
+<!--peredacha iz etogo faila-->
+
+{% block title  %} Войти {% endblock %}
+{% block title2 %}
+    <h2 class="about_yourself_h2_">Войти</h2><br>
+{% endblock %}
+
+{% block content  %}
+    <div class="form_login_reg">
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-error">{{ form.non_field_errors }}</div>
+            {% for f in form %}
+                <p><label class="form-label" for="{{ f.id_for_label }}"> {{f.label}}: </label>{{ f }}</p>
+                <div class="form-error">{{ f.errors }}</div>
+            {% endfor %}
+
+            <button type="submit" class="btn-1">Login</button>
+        </form>
+<!--        <form method="post">-->
+<!--            {% csrf_token %}-->
+<!--            {{ form.title }}<br>-->
+<!--            {{ form.anons }}<br>-->
+<!--            {{ form.full_text }}<br>-->
+<!--            {{ form.date }}<br>-->
+<!--            <span> {{ error }} </span>-->
+<!--            <button type="submit" class="btn btn-success">ADd Article</button>-->
+<!--        </form>-->
+    </div>
+
+{% endblock %}
