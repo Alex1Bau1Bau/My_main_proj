@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+{% block title %}JavaScript{% endblock %}
+
+{% block title2 %}
+    <h2 class="about_yourself_h2_">MY js Proj</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="main_container_js_2">
+
+        <div class="form_parsing">
+            <h2>Новини Дніпра</h2>
+            {% if list_news %}
+                    {% for key, value in list_news.items %}
+                        <p>{{value}}</p>
+                    {% endfor %}
+            {% else %}
+                <p>нету записей</p>
+            {% endif %}
+        </div>
+
+    </div>
+{% endblock %}

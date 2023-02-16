@@ -358,6 +358,15 @@ body {
     width: 450px;
     height: 450px;
     border-radius: 10px;
+    padding-left: 100px;.form_login_reg {
+    background-color: rgb(67, 73, 68);
+
+    color: rgb(18, 235, 152);
+    color: linear-gradient(0deg, rgb(98, 202, 107) 0%, rgb(14, 203, 209) 100%);
+
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
     padding-left: 100px;
     padding-top: 25px;
     margin-left: 25%;
@@ -365,6 +374,61 @@ body {
     margin-bottom: 5px;
     word-wrap: break-word;
 }
+    padding-top: 25px;
+    margin-left: 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.my_content {
+
+    width: 800px;
+    height: 40px;
+    margin-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my_photo_adm_f {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.my_photo_adm_f:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5),
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+
+
+.form_parsing {
+    background-color: rgb(67, 73, 68);
+
+    color: rgb(183, 253, 226);
+    width: 760px;
+    height: auto;
+    border-radius: 10px;
+
+    padding-left: 65px;
+    padding-top: 25px;
+    padding-right: 25px;
+
+    margin-left: 75px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    word-wrap: break-word;
+
+    word-spacing: 6px;
+    line-height: 140%;
+}
+
 /* btnbtnbtnbtnbtnbtnbtnbtnbtnbtnbtnbtn */
 /* ____________________________________________________________________________ */
 
@@ -404,7 +468,7 @@ body {
     width: 250px;
     height: 270px;
     border-radius: 5px;
-    margin-left: 20px;
+    margin-left: 420px;
 
 }
 
@@ -457,3 +521,4 @@ body {
     /* background-color: rgba(49, 243, 153, 0.979); */
     background-color: rgba(186, 250, 220, 0.979);
 }
+

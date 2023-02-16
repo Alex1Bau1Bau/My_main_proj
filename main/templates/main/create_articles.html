@@ -1,0 +1,33 @@
+{% extends 'main/layout.html' %}
+
+{% block title  %} Новости на сайте {% endblock %}
+{% block title2 %}
+    <h2 class="about_yourself_h2_">Новости на сайте</h2><br>
+{% endblock %}
+
+{% block content  %}
+    <div class="form_login_reg">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.anons }}<br>
+            {{ form.full_text }}<br>
+            {{ form.date }}<br>
+            <span> {{ error }} </span>
+            <button type="submit" class="btn btn-success">Add Article</button>
+        </form>
+    </div>
+    <div class="form_login_reg">
+            {% if news %}
+                {% for el in news %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title}}</h3>
+                    <p>{{ el.anons }}</p>
+                    <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Читать детальнее</a>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>у вас нету записей</p>
+            {% endif %}
+    </div>
+{% endblock %}

@@ -35,12 +35,10 @@ class RegisterUserForm(UserCreationForm):
     email = forms.EmailField(label='Email', widget=forms.EmailInput(attrs={'class': 'form-input'}))
     password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
     password2 = forms.CharField(label='Повтор пароль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
-    # стили не изменились дублируем другие
     class Meta:
         model = User
         fields = ('username', 'email', 'password1', 'password2')
         widgets = {
-            # 'username', 'password1', 'password2' - значения берем через админ панель _ пользователи _ в полях имени и пароля _ прав кн мыши _ посмотреть код
             'username': forms.TextInput(attrs={'class': 'form-input'}),
             'password1': forms.PasswordInput(attrs={'class': 'form-input'}),
             'password2': forms.PasswordInput(attrs={'class': 'form-input'}),

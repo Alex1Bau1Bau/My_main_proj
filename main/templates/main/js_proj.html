@@ -1,4 +1,6 @@
 {% extends 'main/layout.html' %}
+{% load static %}
+
 {% block title %}JavaScript{% endblock %}
 
 {% block title2 %}
@@ -33,6 +35,6 @@
                         <button class="calculator_js_button_button" data-type="+">+</button>
                     </div>
                 </div>
-
+        <script  type="text/javascript" src="{% static 'main/js/js_calculator_1.js' %}"></script>
     </div>
 {% endblock %}

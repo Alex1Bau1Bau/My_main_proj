@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}MY FOTO{% endblock %}
+
+{% block title2 %}
+    <h2 class="about_yourself_h2_">MY FOTO</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="main_container_js_2">
+        <img src="{% static 'main/img/my_photo_adm_1.jpeg' %}" alt="" class="my_photo_adm_f">
+        <img src="{% static 'main/img/my_photo_adm_2.jpeg' %}" alt="" class="my_photo_adm_f">
+        <img src="{% static 'main/img/my_photo_adm_4.jpeg' %}" alt="" class="my_photo_adm_f">
+        <img src="{% static 'main/img/my_photo_adm_5.jpeg' %}" alt="" class="my_photo_adm_f">
+        <img src="{% static 'main/img/my_photo_adm_6.jpeg' %}" alt="" class="my_photo_adm_f">
+    </div>
+{% endblock %}
